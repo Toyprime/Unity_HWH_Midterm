@@ -27,6 +27,10 @@ public class GameManager : MonoBehaviour
     public AudioClip soundCageMove;
     [Header("敲門音效")]
     public AudioClip soundKnock;
+    [Header("開門音效")]
+    public AudioClip soundOpen;
+    [Header("門動畫控制器")]
+    public Animator aniDoor;
 
     private int countDoor;  //看到門的次數
 
@@ -40,6 +44,11 @@ public class GameManager : MonoBehaviour
         if (countDoor == 1)
         {
             aud.PlayOneShot(soundKnock, 2.5f);
+        }
+        else if (countDoor == 2)
+        {
+            aud.PlayOneShot(soundOpen, 2.5f);
+            aniDoor.SetTrigger("開門觸發器");
         }
     }
 

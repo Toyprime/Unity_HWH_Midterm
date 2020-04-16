@@ -3409,6 +3409,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6405592, guid: b0e0e89eed1bb7f4982f8a6092a384b6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0e0e89eed1bb7f4982f8a6092a384b6, type: 3}
 --- !u!1 &893701641 stripped
@@ -5331,6 +5335,8 @@ MonoBehaviour:
   soundChairMove: {fileID: 8300000, guid: ca8fc248872103d4aa54184b88ad7140, type: 3}
   soundCageMove: {fileID: 8300000, guid: 1b6c96e1f4c2bfc40a3b1267c790c3ee, type: 3}
   soundKnock: {fileID: 8300000, guid: c3f80d30c35faf849be8d646d6ca8c5a, type: 3}
+  soundOpen: {fileID: 8300000, guid: 3332d508c5296c647ba247d0d24251f9, type: 3}
+  aniDoor: {fileID: 1927253549}
 --- !u!4 &1265279036
 Transform:
   m_ObjectHideFlags: 0
@@ -7124,6 +7130,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1911428987}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1927253547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: b0e0e89eed1bb7f4982f8a6092a384b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 877892777}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1927253549
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927253547}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a9b2ad472c28ee4428d13747759f13a4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1934602256
 GameObject:
   m_ObjectHideFlags: 0
@@ -7826,6 +7857,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!65 &2101077940
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101077934}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6083889, y: 4.156709, z: 2.4315577}
+  m_Center: {x: 0.17091325, y: 2.076937, z: -1.2153094}
 --- !u!1001 &2113505552
 PrefabInstance:
   m_ObjectHideFlags: 0
